@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "USMLE clinical knowledge application and physician-task reasoning output envelope",
+  "type": "object",
+  "required": [
+    "task_contract",
+    "source_ids",
+    "evidence",
+    "uncertainty",
+    "review_status"
+  ],
+  "additionalProperties": true,
+  "x-human-review-required": true,
+  "x-credentialing": false
+}

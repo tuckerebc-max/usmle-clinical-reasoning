@@ -1,0 +1,6 @@
+interface:
+  display_name: "USMLE Clinical Reasoning"
+  short_description: "Structure supervised clinical reasoning"
+  default_prompt: "Use $usmle-clinical-reasoning for a source-grounded, bounded USMLE clinical knowledge application and physician-task reasoning workflow."
+policy:
+  allow_implicit_invocation: true

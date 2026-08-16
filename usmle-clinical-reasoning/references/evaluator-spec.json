@@ -1,0 +1,52 @@
+{
+  "evaluator_id": "OPT-66-USMLE-EVALUATOR-001",
+  "track_id": "OPT-66-USMLE",
+  "competency_id": "F2-COMP-66-USMLE-001",
+  "status": "EVALUATOR_DRAFT",
+  "primary_evidence": [
+    "educational case orientation",
+    "problem representation",
+    "cue / hypothesis ledger",
+    "information plan",
+    "safety / supervision record",
+    "handoff",
+    "reassessment."
+  ],
+  "dimensions": [
+    "evidence fidelity",
+    "problem representation",
+    "differential reasoning",
+    "information purpose",
+    "safety",
+    "supervision",
+    "uncertainty",
+    "communication",
+    "reassessment."
+  ],
+  "critical_failures": [
+    "real-patient care instruction",
+    "invented clinical finding",
+    "unsafe action without escalation",
+    "privacy breach",
+    "or outdated guidance presented as current."
+  ],
+  "challenge_set_design": [
+    "missing cue",
+    "competing hypotheses",
+    "test with unclear purpose",
+    "safety-critical deterioration",
+    "handoff with incomplete information",
+    "refusal / escalation case."
+  ],
+  "improvement_loop": "diagnose premature closure or missing safety → revise case-reasoning prompt → rerun on a different educational case → clinician / educator reviews.",
+  "quality_dimensions": [
+    "evidence fidelity",
+    "problem representation",
+    "differential and information fit",
+    "safety, supervision, and uncertainty",
+    "communication and reassessment"
+  ],
+  "human_review_required": true,
+  "no_credentialing": true,
+  "source_boundary": "Project evaluator design until source-specific validity and human-review gates close."
+}

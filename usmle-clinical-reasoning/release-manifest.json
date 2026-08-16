@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "package_id": "F2-SKILL-USMLE-CLINICAL-REASONING-001",
+  "skill_name": "usmle-clinical-reasoning",
+  "track_id": "OPT-66-USMLE",
+  "competency_id": "F2-COMP-66-USMLE-001",
+  "architecture_id": "F2-ARCH-66-USMLE-001",
+  "status": "PRIVATE_V1_READY_FOR_DRY_RUN",
+  "source_ids": [
+    "F2-66-007",
+    "F2-66-008"
+  ],
+  "source_handoff": "references/source-manifest.json",
+  "source_crosswalk": "references/source-crosswalk.md",
+  "source_lineage": "Fork 2 approved-track lineage is preserved in the in-package source manifest; no parent workspace is required at runtime.",
+  "human_review_required": true,
+  "credentialing": false,
+  "github_push_performed": false,
+  "open_gates": [
+    "current official source and rights verification",
+    "domain-qualified human review",
+    "human dry-run and reviewer calibration",
+    "accessibility review",
+    "fresh-context forward testing"
+  ],
+  "competency_name": "Supervised clinical knowledge application and physician-task reasoning",
+  "files": [
+    "SKILL.md",
+    "agents/openai.yaml",
+    "references",
+    "scripts",
+    "tests",
+    ".github/workflows/validate.yml",
+    "release-manifest.json"
+  ]
+}

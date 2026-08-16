@@ -1,0 +1,94 @@
+{
+  "fixture_id": "FIX-USMLE-CLINICAL-REASONING-001",
+  "track_id": "OPT-66-USMLE",
+  "competency_id": "F2-COMP-66-USMLE-001",
+  "status": "READY_FOR_HUMAN_DRY_RUN",
+  "source_ids": [
+    "F2-66-007",
+    "F2-66-008"
+  ],
+  "construct_boundary": "Original educational pilot for USMLE clinical knowledge application and physician-task reasoning; not a credential, license, professional authorization, or high-impact decision.",
+  "task_contract": {
+    "purpose": "Run one bounded learner/reviewer task and inspect the evidence record.",
+    "role": "educational clinical-reasoning scaffold",
+    "audience": "learner and qualified reviewer",
+    "format": "case orientation, problem representation, hypothesis comparison, information-need rationale, safety / supervision record, reassessment question.",
+    "time_limit": "60 minutes",
+    "allowed_materials": [
+      "this original synthetic fixture",
+      "learner notes",
+      "clearly identified public sources where applicable"
+    ],
+    "prohibited_actions": [
+      "invent source content",
+      "use confidential or real-person data",
+      "present the output as professional authorization"
+    ],
+    "decision_rights": "provide formative feedback and request review; no credentialing or final consequential decision",
+    "accessibility": "plain-language, screen-reader-compatible, and equivalent representations are permitted"
+  },
+  "stimulus": {
+    "type": "original_synthetic_bounded_packet_excerpt",
+    "notice": "The fixture is educational and non-secure.",
+    "excerpt": "## `OPT-66-USMLE` — Supervised clinical reasoning with missing cues\n\n**Learner target:** Represent an educational case, state information needs, and keep safety and supervision visible.\n\n**Fictional educational case:** A simulated learner receives a short case with a symptom pattern, two relevant findings, one missing time-course detail, and a prompt asking what information should be clarified before any next step.\n\n**Learner task:** Build a cue and hypothesis ledger, identify the missing detail, explain why it matters, state what cannot be concluded, and draft a supervised handoff that requests qualified review.\n\n**Required artifact:** case orientation, problem representation, hypothesis comparison, information-need rationale, safety / supervision record, reassessment question.\n\n**Nonmodel:** A diagnosis or treatment instruction for a real person.  \n**Feedback move:** Ask “What is known, what is inferred, what is missing, and who must review before action?”\n\n**Agent handoff:** Agent may structure the fictional case; it must not diagnose, prescribe, or suppress uncertainty. Real-person input routes to professional review.\n\n**Exit test:** Remove one cue and add a conflicting cue...."
+  },
+  "learner_deliverables": [
+    "case orientation, problem representation, hypothesis comparison, information-need rationale, safety / supervision record, reassessment question.",
+    "uncertainty and limitation record",
+    "review/escalation request"
+  ],
+  "evidence_envelope": {
+    "required_fields": [
+      "task_contract",
+      "source_ids",
+      "evidence",
+      "uncertainty",
+      "review_status"
+    ],
+    "minimum_evidence": [
+      "source traceability",
+      "boundary statement",
+      "at least one limitation or unresolved question",
+      "human-review route"
+    ]
+  },
+  "machine_checks": [
+    "required fields are present",
+    "source IDs are nonempty",
+    "rights and safety flags are declared",
+    "review status is present"
+  ],
+  "human_review": [
+    "Clinician or medical educator owns clinical interpretation, safety, privacy, and consequential decisions.",
+    "substantive interpretation",
+    "accessibility and fairness",
+    "whether the output crosses the boundary"
+  ],
+  "stop_conditions": [
+    "real or confidential data are introduced",
+    "source or rights status is unclear",
+    "the task crosses into a live professional decision",
+    "the output is presented as a credential or sign-off"
+  ],
+  "evaluator": {
+    "dimensions": [
+      "traceability",
+      "construct evidence",
+      "uncertainty",
+      "boundary discipline",
+      "communication"
+    ],
+    "machine_decision": "structural checks only",
+    "human_decision": "qualified reviewer decides substantive adequacy and escalation",
+    "no_credentialing": true
+  },
+  "qa": {
+    "original_fixture": true,
+    "secure_content_reproduced": false,
+    "confidential_data": false,
+    "human_dry_run": "pending",
+    "known_risks": [
+      "Use educational cases only; no real patient data, diagnosis, prescription, or independent clinical action."
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "track_id": "OPT-66-USMLE",
+  "competency_id": "F2-COMP-66-USMLE-001",
+  "source_ids": [
+    "F2-66-007",
+    "F2-66-008"
+  ],
+  "source_snapshot_date": "2026-08-09",
+  "source_boundary": "Scoped source evidence; not the competency itself.",
+  "project": "Fork 2 approved textbook-skill tracks",
+  "corpus_boundary": "Official and high-authority sources listed in the Fork 2 source ledger for eight user-approved options; no protected exam items, live client data, real-patient data, or full university curricula treated as evidence.",
+  "generated_at": "2026-08-09",
+  "migration": {
+    "source_schema": "F2-LEDGER-001",
+    "deduplication_notes": [
+      "Source IDs are Fork 2 lineage IDs and remain linked to the Markdown and JSONL ledger.",
+      "No quotations are promoted; candidate packets use paraphrase and source-grounded claims only."
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "F2-66-007",
+      "author_or_organization": "United States Medical Licensing Examination",
+      "title": "Step 2 CK content outline and specifications",
+      "date": "Current source accessed 2026-08-09",
+      "format": "HTML",
+      "publication_status": "authoritative-standard",
+      "authority_role": "official medical licensure examination",
+      "independence": "Primary issuing-body source",
+      "locator_system": "URL and source-ledger record",
+      "supplied_filename": null,
+      "version_or_revision": "Current page or version noted in source ledger",
+      "coverage": "clinical knowledge application under supervision",
+      "use_boundary": "Construct and evidence crosswalk only; not a license, admissions decision, or universal PhD standard",
+      "notes": "https://www.usmle.org/exam-resources/step-2-ck-materials/step-2-ck-content-outline-specifications"
+    },
+    {
+      "source_id": "F2-66-008",
+      "author_or_organization": "Association of American Medical Colleges",
+      "title": "Core Entrustable Professional Activities for Entering Residency",
+      "date": "Current source accessed 2026-08-09",
+      "format": "HTML",
+      "publication_status": "authoritative-standard",
+      "authority_role": "national medical education framework",
+      "independence": "Primary issuing-body source",
+      "locator_system": "URL and source-ledger record",
+      "supplied_filename": null,
+      "version_or_revision": "Current page or version noted in source ledger",
+      "coverage": "integrated activities, supervision, feedback",
+      "use_boundary": "Construct and evidence crosswalk only; not a license, admissions decision, or universal PhD standard",
+      "notes": "https://www.aamc.org/about-us/mission-areas/medical-education/cbme/core-epas"
+    }
+  ],
+  "provenance": [
+    {
+      "provenance_id": "P-F2-66-007",
+      "container_source_id": "F2-66-007",
+      "container_locator": "official URL in source ledger",
+      "claimed_original_source_id": "F2-66-007",
+      "claimed_original_locator": "official document/page",
+      "transformation": "official source -> Fork 2 ledger -> approved-track crosswalk",
+      "verification_basis": "official URL opened or inspected during current research pass",
+      "verification_status": "verified-working-source",
+      "verified_at": "2026-08-09",
+      "notes": "Full technical, rights, and version audit remains a track-level next step."
+    },
+    {
+      "provenance_id": "P-F2-66-008",
+      "container_source_id": "F2-66-008",
+      "container_locator": "official URL in source ledger",
+      "claimed_original_source_id": "F2-66-008",
+      "claimed_original_locator": "official document/page",
+      "transformation": "official source -> Fork 2 ledger -> approved-track crosswalk",
+      "verification_basis": "official URL opened or inspected during current research pass",
+      "verification_status": "verified-working-source",
+      "verified_at": "2026-08-09",
+      "notes": "Full technical, rights, and version audit remains a track-level next step."
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-F2-66-USMLE-1",
+      "statement": "Step 2 CK assesses clinical knowledge application for patient care under supervision.",
+      "evidence_type": "construct-definition",
+      "source_ids": [
+        "F2-66-007"
+      ],
+      "provenance_ids": [
+        "P-F2-66-007"
+      ],
+      "theme_ids": [
+        "T-F2-66-USMLE"
+      ],
+      "locator_or_basis": "USMLE Step 2 CK content page",
+      "authority_role": "official medical licensure examination",
+      "claim_status": "supported",
+      "publication_condition": "ready",
+      "confidence": "high",
+      "contrary_evidence_ids": [],
+      "caution": "Not independent practice."
+    },
+    {
+      "evidence_id": "E-F2-66-USMLE-2",
+      "statement": "AAMC Core EPAs add activity, entrustment, supervision, and feedback framing.",
+      "evidence_type": "competency-framework",
+      "source_ids": [
+        "F2-66-008"
+      ],
+      "provenance_ids": [
+        "P-F2-66-008"
+      ],
+      "theme_ids": [
+        "T-F2-66-USMLE"
+      ],
+      "locator_or_basis": "AAMC Core EPAs page",
+      "authority_role": "national medical education framework",
+      "claim_status": "supported",
+      "publication_condition": "conditional",
+      "confidence": "high",
+      "contrary_evidence_ids": [],
+      "caution": "Specialty and supervision boundaries remain."
+    }
+  ],
+  "themes": [
+    {
+      "theme_id": "T-F2-66-USMLE",
+      "question_or_claim": "What supervised clinical reasoning construct sits beneath Step 2 CK and Core EPAs?",
+      "inclusion_test": "Must include supervision, safety, uncertainty, and reassessment.",
+      "supporting_source_ids": [
+        "F2-66-007",
+        "F2-66-008"
+      ],
+      "supporting_evidence_ids": [
+        "E-F2-66-USMLE-1",
+        "E-F2-66-USMLE-2"
+      ],
+      "contrary_evidence_ids": [],
+      "quote_ids": [],
+      "case_ids": [],
+      "synthesis": "Clinical knowledge application is distinct from independent clinical practice.",
+      "claim_status": "supported",
+      "publication_condition": "conditional",
+      "confidence": "high"
+    }
+  ],
+  "quotes": [],
+  "cases": [],
+  "gaps": [
+    {
+      "gap_id": "G-F2-66-USMLE",
+      "question": "Current physician-task documents, clinical reviewer route, and case rights",
+      "why_it_matters": "medical, currentness, safety",
+      "missing_evidence_type": "source, technical, rights, or professional-review evidence",
+      "downstream_effect": "No real-patient examples; professional review",
+      "disposition": "verify"
+    }
+  ],
+  "handoff": {
+    "primary_source_ids": [
+      "F2-66-007",
+      "F2-66-008"
+    ],
+    "primary_evidence_ids": [
+      "E-F2-66-USMLE-1",
+      "E-F2-66-USMLE-2"
+    ],
+    "primary_theme_ids": [
+      "T-F2-66-USMLE"
+    ],
+    "verified_primary_quote_ids": [],
+    "conditional_quote_ids": [],
+    "prohibited_quote_ids": [],
+    "protected_case_ids": [],
+    "unresolved_gap_ids": [
+      "G-F2-66-USMLE"
+    ],
+    "inherited_use_notes_authority": "upstream-context-only",
+    "outline_boundary": "Evidence and competency handoff only; no final section order or word allocation."
+  },
+  "counts": {
+    "sources": 2,
+    "provenance": 2,
+    "evidence": 2,
+    "themes": 1,
+    "quotes": 0,
+    "cases": 0,
+    "gaps": 1
+  }
+}
